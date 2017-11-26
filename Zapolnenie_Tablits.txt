@@ -1,0 +1,35 @@
+insert into category values(1,'мазь');
+insert into category values(2,'спрей');
+insert into category values(3,'таблекти');
+insert into category values(4,'сироп');
+insert into category values(5,'порошок');
+
+insert into SYMPTOM values(2,'головная в животе');
+insert into SYMPTOM values(1,'головная боль');
+insert into SYMPTOM values(3,'температура');
+insert into SYMPTOM values(4,'кашель');
+insert into SYMPTOM values(5,'насморк');
+
+insert into DISEASE values(1,'орви');
+insert into DISEASE values(2,'грипп');
+insert into DISEASE values(3,'аллергия');
+
+insert into DISEASE_SYMPTOM values(1,5);
+insert into DISEASE_SYMPTOM values(1,4);
+insert into DISEASE_SYMPTOM values(1,3);
+insert into DISEASE_SYMPTOM values(2,3);
+insert into DISEASE_SYMPTOM values(2,4);
+insert into DISEASE_SYMPTOM values(2,5);
+
+insert into MEDICAMENT values(1,3,'парацетамол','15/10/19',null);
+insert into MEDICAMENT values(2,5,'терафлю','09/11/17',null);
+insert into MEDICAMENT values(3,4,'гербион','22/03/19',null);
+insert into MEDICAMENT values(4,2,'гексорал','15/10/19',null);
+
+insert into MEDICAMENT_DISEASE values(1,3);
+insert into MEDICAMENT_DISEASE values(2,1);
+insert into MEDICAMENT_DISEASE values(3,1);
+insert into MEDICAMENT_DISEASE values(4,1);
+insert into MEDICAMENT_DISEASE values(2,2);
+insert into MEDICAMENT_DISEASE values(3,2);
+insert into MEDICAMENT_DISEASE values(4,2);
