@@ -84,6 +84,7 @@ namespace HomeFirtAidKit
             //    SelectTable("category");
             //}
             new ChangeTable().ShowDialog();
+            SelectMedicaments();
         }
 
         private void dataGridMedicament_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

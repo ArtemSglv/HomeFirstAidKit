@@ -27,10 +27,11 @@ namespace HomeFirtAidKit
             switch (comboBoxTable.SelectedItem.ToString())
             {
                 case "Medicaments": { new AddMedicamentForm().ShowDialog();  break; }
-                case "Disease": { break; }
-                case "Symptom": { break; }
-                case "Category": { break; }
+                case "Disease": { new AddDiseaseForm().ShowDialog(); break; }
+                case "Symptom": { new AddMedicamentForm().ShowDialog(); break; }
+                case "Category": { new AddMedicamentForm().ShowDialog(); break; }
             }
+            Close();
         }
     }
 }
