@@ -107,7 +107,7 @@
             this.labelShelfLife.Name = "labelShelfLife";
             this.labelShelfLife.Size = new System.Drawing.Size(67, 17);
             this.labelShelfLife.TabIndex = 7;
-            this.labelShelfLife.Text = "Shel fLife";
+            this.labelShelfLife.Text = "Shelf Life";
             // 
             // dateTimePicker1
             // 

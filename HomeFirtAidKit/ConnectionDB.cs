@@ -35,6 +35,22 @@ namespace HomeFirtAidKit
             MySqlCommand msc = new MySqlCommand(sql, connection);
             msc.ExecuteNonQuery();
         }
+        public static string Select(string sql)
+        {
+            string result = "";
+            using (MySqlCommand command = connection.CreateCommand())
+            {
+                command.CommandText = sql;
+                using (var r= command.ExecuteReader())
+                {
+                    while(r.Read())
+                    {
+                        result += (int)r[0]+" "+r[1]+"$";
+                    }
+                }
+            }
+            return result;
+        }
         public static void Close()
         {
             connection.Close();
