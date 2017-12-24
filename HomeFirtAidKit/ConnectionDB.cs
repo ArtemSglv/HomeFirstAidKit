@@ -20,7 +20,7 @@ namespace HomeFirtAidKit
             string password = "root";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + "port=3306;";
 
             connection = new MySqlConnection(connectionString);
             connection.Open();
