@@ -93,5 +93,11 @@ namespace HomeFirtAidKit
             SelectDisease(med_id);
             SelectSymptom(med_id);
         }
+
+        private void butEdit_Click(object sender, EventArgs e)
+        {
+            new ChangeTable2().ShowDialog();
+            SelectMedicaments();
+        }
     }
 }

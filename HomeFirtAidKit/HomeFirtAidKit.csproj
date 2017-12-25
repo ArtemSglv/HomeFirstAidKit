@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,11 +58,29 @@
     <Compile Include="AddSymptomForm.Designer.cs">
       <DependentUpon>AddSymptomForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeTable2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeTable2.Designer.cs">
+      <DependentUpon>ChangeTable2.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangeTable.Designer.cs">
       <DependentUpon>ChangeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDiseaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDiseaseForm.Designer.cs">
+      <DependentUpon>EditDiseaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSymptomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSymptomForm.Designer.cs">
+      <DependentUpon>EditSymptomForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditMedicamentForm.cs">
       <SubType>Form</SubType>
@@ -103,8 +121,17 @@
     <EmbeddedResource Include="AddSymptomForm.resx">
       <DependentUpon>AddSymptomForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangeTable2.resx">
+      <DependentUpon>ChangeTable2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeTable.resx">
       <DependentUpon>ChangeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDiseaseForm.resx">
+      <DependentUpon>EditDiseaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSymptomForm.resx">
+      <DependentUpon>EditSymptomForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditMedicamentForm.resx">
       <DependentUpon>EditMedicamentForm.cs</DependentUpon>
