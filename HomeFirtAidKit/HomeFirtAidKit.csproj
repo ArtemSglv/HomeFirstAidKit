@@ -97,6 +97,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddDiseaseForm.resx">
+      <DependentUpon>AddDiseaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSymptomForm.resx">
+      <DependentUpon>AddSymptomForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeTable.resx">
       <DependentUpon>ChangeTable.cs</DependentUpon>
     </EmbeddedResource>

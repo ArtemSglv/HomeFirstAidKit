@@ -16,5 +16,14 @@ namespace HomeFirtAidKit
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sym_id = int.Parse(ConnectionDB.Select("select max(ID_symptom) from symptom"));
+            sym_id++;
+            string sql = "insert into disease values('" + sym_id + "','" + textBox1.Text + "')";
+            ConnectionDB.Insert(sql);
+            Close();
+        }
     }
 }
