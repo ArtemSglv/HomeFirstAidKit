@@ -17,6 +17,8 @@ namespace HomeFirtAidKit
             InitializeComponent();
             //foreach (DataGridViewRow r in rows)
             comboBoxIDCat.Items.AddRange(ConnectionDB.Select("select cat.ID_cat, cat.Name from category cat").Split(new[] { '$' }, StringSplitOptions.RemoveEmptyEntries));
+            comboBoxDis.Items.AddRange(ConnectionDB.Select("select dis.ID_disease, dis.Name from disease dis").Split(new[] { '$' }, StringSplitOptions.RemoveEmptyEntries));
+            comboBoxSym.Items.AddRange(ConnectionDB.Select("select sym.ID_symptom, sym.Name from symptom sym").Split(new[] { '$' }, StringSplitOptions.RemoveEmptyEntries));
         }
 
         private void butAdd_Click(object sender, EventArgs e)
@@ -27,6 +29,11 @@ namespace HomeFirtAidKit
             string sql = "insert into MEDICAMENT values(" + textBoxIDMed.Text + "," +
                 cat_id + ",'" + textBoxName.Text + "','" + dateTimePicker1.Value.ToString("dd/MM/yy") + "', null)";
             ConnectionDB.Insert(sql);
+            Close();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

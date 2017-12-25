@@ -73,16 +73,6 @@ namespace HomeFirtAidKit
 
         private void butAdd_Click(object sender, EventArgs e)
         {
-            //if (tabControl.SelectedTab.Name == tabMedicament.Name)
-            //{
-            //    new AddMedicamentForm(dataGridSymptom.Rows).ShowDialog();
-            //    SelectTable("medicament");
-            //}
-            //else
-            //{
-            //    new AddCategoryForm().ShowDialog();
-            //    SelectTable("category");
-            //}
             new ChangeTable().ShowDialog();
             SelectMedicaments();
         }

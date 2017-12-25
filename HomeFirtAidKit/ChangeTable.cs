@@ -28,8 +28,8 @@ namespace HomeFirtAidKit
             {
                 case "Medicaments": { new AddMedicamentForm().ShowDialog();  break; }
                 case "Disease": { new AddDiseaseForm().ShowDialog(); break; }
-                case "Symptom": { new AddMedicamentForm().ShowDialog(); break; }
-                case "Category": { new AddMedicamentForm().ShowDialog(); break; }
+                case "Symptom": { new AddSymptomForm().ShowDialog(); break; }
+                case "Category": { new AddCategoryForm().ShowDialog(); break; }
             }
             Close();
         }
