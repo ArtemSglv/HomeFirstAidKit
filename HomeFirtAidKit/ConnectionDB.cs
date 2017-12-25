@@ -51,6 +51,23 @@ namespace HomeFirtAidKit
             }
             return result;
         }
+
+        public static string SelectOne(string sql)
+        {
+            string result = "";
+            using (MySqlCommand command = connection.CreateCommand())
+            {
+                command.CommandText = sql;
+                using (var r = command.ExecuteReader())
+                {
+                    while (r.Read())
+                    {
+                        result += (int)r[0];
+                    }
+                }
+            }
+            return result;
+        }
         public static void Close()
         {
             connection.Close();
