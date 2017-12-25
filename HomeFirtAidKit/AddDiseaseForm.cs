@@ -19,7 +19,7 @@ namespace HomeFirtAidKit
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int dis_id = int.Parse(ConnectionDB.Select("select max(ID_disease) from disease"));
+            int dis_id = int.Parse(ConnectionDB.SelectOne("select max(ID_disease) from disease"));
             dis_id++;
             string sql = "insert into disease values('" + dis_id + "','" + textBox1.Text + "')";
             ConnectionDB.Insert(sql);
