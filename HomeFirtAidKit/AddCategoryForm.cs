@@ -22,7 +22,9 @@ namespace HomeFirtAidKit
 
         private void butAdd_Click(object sender, EventArgs e)
         {
-           string sql="insert into category values('" + textBoxID.Text + "','" + textBoxName.Text + "')";
+            int cat_id = int.Parse(ConnectionDB.Select("select max(ID_symptom) from symptom"));
+            cat_id++;
+            string sql="insert into category values('" + cat_id + "','" + textBoxName.Text + "')";
             ConnectionDB.Insert(sql);
             Close();
         }

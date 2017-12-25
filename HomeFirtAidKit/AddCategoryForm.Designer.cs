@@ -28,34 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelID = new System.Windows.Forms.Label();
-            this.textBoxID = new System.Windows.Forms.TextBox();
             this.butAdd = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // labelID
-            // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(25, 23);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(25, 17);
-            this.labelID.TabIndex = 0;
-            this.labelID.Text = "ID:";
-            // 
-            // textBoxID
-            // 
-            this.textBoxID.Location = new System.Drawing.Point(56, 20);
-            this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(62, 22);
-            this.textBoxID.TabIndex = 1;
-            // 
             // butAdd
             // 
-            this.butAdd.Location = new System.Drawing.Point(181, 20);
+            this.butAdd.Location = new System.Drawing.Point(136, 16);
+            this.butAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.butAdd.Name = "butAdd";
-            this.butAdd.Size = new System.Drawing.Size(98, 54);
+            this.butAdd.Size = new System.Drawing.Size(74, 44);
             this.butAdd.TabIndex = 2;
             this.butAdd.Text = "Add";
             this.butAdd.UseVisualStyleBackColor = true;
@@ -63,30 +46,31 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(100, 52);
+            this.textBoxName.Location = new System.Drawing.Point(72, 29);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(62, 22);
+            this.textBoxName.Size = new System.Drawing.Size(48, 20);
             this.textBoxName.TabIndex = 4;
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(25, 55);
+            this.labelName.Location = new System.Drawing.Point(16, 32);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(69, 17);
+            this.labelName.Size = new System.Drawing.Size(52, 13);
             this.labelName.TabIndex = 3;
             this.labelName.Text = "Category:";
             // 
             // AddCategoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(291, 93);
+            this.ClientSize = new System.Drawing.Size(218, 76);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.butAdd);
-            this.Controls.Add(this.textBoxID);
-            this.Controls.Add(this.labelID);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddCategoryForm";
             this.Text = "New Category";
             this.ResumeLayout(false);
@@ -95,9 +79,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;

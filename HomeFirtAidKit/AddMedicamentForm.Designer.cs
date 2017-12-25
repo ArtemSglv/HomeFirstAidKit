@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelIDMed = new System.Windows.Forms.Label();
-            this.textBoxIDMed = new System.Windows.Forms.TextBox();
             this.butAdd = new System.Windows.Forms.Button();
             this.labelIDCat = new System.Windows.Forms.Label();
             this.comboBoxIDCat = new System.Windows.Forms.ComboBox();
@@ -46,24 +44,6 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelIDMed
-            // 
-            this.labelIDMed.AutoSize = true;
-            this.labelIDMed.Location = new System.Drawing.Point(9, 7);
-            this.labelIDMed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelIDMed.Name = "labelIDMed";
-            this.labelIDMed.Size = new System.Drawing.Size(42, 13);
-            this.labelIDMed.TabIndex = 0;
-            this.labelIDMed.Text = "ID Med";
-            // 
-            // textBoxIDMed
-            // 
-            this.textBoxIDMed.Location = new System.Drawing.Point(52, 5);
-            this.textBoxIDMed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxIDMed.Name = "textBoxIDMed";
-            this.textBoxIDMed.Size = new System.Drawing.Size(45, 20);
-            this.textBoxIDMed.TabIndex = 1;
-            // 
             // butAdd
             // 
             this.butAdd.Location = new System.Drawing.Point(187, 10);
@@ -78,7 +58,7 @@
             // labelIDCat
             // 
             this.labelIDCat.AutoSize = true;
-            this.labelIDCat.Location = new System.Drawing.Point(9, 33);
+            this.labelIDCat.Location = new System.Drawing.Point(9, 20);
             this.labelIDCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIDCat.Name = "labelIDCat";
             this.labelIDCat.Size = new System.Drawing.Size(23, 13);
@@ -88,7 +68,7 @@
             // comboBoxIDCat
             // 
             this.comboBoxIDCat.FormattingEnabled = true;
-            this.comboBoxIDCat.Location = new System.Drawing.Point(52, 31);
+            this.comboBoxIDCat.Location = new System.Drawing.Point(52, 18);
             this.comboBoxIDCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxIDCat.Name = "comboBoxIDCat";
             this.comboBoxIDCat.Size = new System.Drawing.Size(75, 21);
@@ -96,7 +76,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(52, 107);
+            this.textBoxName.Location = new System.Drawing.Point(52, 94);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(75, 20);
@@ -105,7 +85,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(9, 110);
+            this.labelName.Location = new System.Drawing.Point(9, 97);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(35, 13);
@@ -115,7 +95,7 @@
             // labelShelfLife
             // 
             this.labelShelfLife.AutoSize = true;
-            this.labelShelfLife.Location = new System.Drawing.Point(9, 136);
+            this.labelShelfLife.Location = new System.Drawing.Point(9, 123);
             this.labelShelfLife.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelShelfLife.Name = "labelShelfLife";
             this.labelShelfLife.Size = new System.Drawing.Size(51, 13);
@@ -124,7 +104,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(64, 134);
+            this.dateTimePicker1.Location = new System.Drawing.Point(64, 121);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(109, 20);
@@ -132,7 +112,7 @@
             // 
             // textBoxApp
             // 
-            this.textBoxApp.Location = new System.Drawing.Point(71, 158);
+            this.textBoxApp.Location = new System.Drawing.Point(71, 145);
             this.textBoxApp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxApp.Name = "textBoxApp";
             this.textBoxApp.Size = new System.Drawing.Size(75, 20);
@@ -141,7 +121,7 @@
             // labelApplic
             // 
             this.labelApplic.AutoSize = true;
-            this.labelApplic.Location = new System.Drawing.Point(9, 161);
+            this.labelApplic.Location = new System.Drawing.Point(9, 148);
             this.labelApplic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelApplic.Name = "labelApplic";
             this.labelApplic.Size = new System.Drawing.Size(59, 13);
@@ -151,7 +131,7 @@
             // comboBoxDis
             // 
             this.comboBoxDis.FormattingEnabled = true;
-            this.comboBoxDis.Location = new System.Drawing.Point(52, 57);
+            this.comboBoxDis.Location = new System.Drawing.Point(52, 44);
             this.comboBoxDis.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDis.Name = "comboBoxDis";
             this.comboBoxDis.Size = new System.Drawing.Size(75, 21);
@@ -160,7 +140,7 @@
             // labelDisease
             // 
             this.labelDisease.AutoSize = true;
-            this.labelDisease.Location = new System.Drawing.Point(9, 59);
+            this.labelDisease.Location = new System.Drawing.Point(9, 46);
             this.labelDisease.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDisease.Name = "labelDisease";
             this.labelDisease.Size = new System.Drawing.Size(45, 13);
@@ -170,7 +150,7 @@
             // comboBoxSym
             // 
             this.comboBoxSym.FormattingEnabled = true;
-            this.comboBoxSym.Location = new System.Drawing.Point(52, 82);
+            this.comboBoxSym.Location = new System.Drawing.Point(52, 69);
             this.comboBoxSym.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxSym.Name = "comboBoxSym";
             this.comboBoxSym.Size = new System.Drawing.Size(75, 21);
@@ -179,7 +159,7 @@
             // labelSymptom
             // 
             this.labelSymptom.AutoSize = true;
-            this.labelSymptom.Location = new System.Drawing.Point(4, 84);
+            this.labelSymptom.Location = new System.Drawing.Point(4, 71);
             this.labelSymptom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSymptom.Name = "labelSymptom";
             this.labelSymptom.Size = new System.Drawing.Size(50, 13);
@@ -215,8 +195,6 @@
             this.Controls.Add(this.comboBoxIDCat);
             this.Controls.Add(this.labelIDCat);
             this.Controls.Add(this.butAdd);
-            this.Controls.Add(this.textBoxIDMed);
-            this.Controls.Add(this.labelIDMed);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddMedicamentForm";
             this.Text = "New Medicament";
@@ -226,9 +204,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelIDMed;
-        private System.Windows.Forms.TextBox textBoxIDMed;
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.Label labelIDCat;
         private System.Windows.Forms.ComboBox comboBoxIDCat;
