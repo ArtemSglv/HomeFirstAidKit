@@ -28,7 +28,7 @@ namespace HomeFirtAidKit
             string sym_id = comboBoxDis.SelectedItem.ToString().Split(' ')[0];
             string dis_id = comboBoxSym.SelectedItem.ToString().Split(' ')[0];
 
-            int med_id = int.Parse(ConnectionDB.Select("select max(ID_med) from medicament"));
+            int med_id = int.Parse(ConnectionDB.SelectOne("select max(ID_med) from medicament"));
             med_id++;
             string sql = "insert into MEDICAMENT values(" + med_id + "," +
                 cat_id + ",'" + textBoxName.Text + "','" + dateTimePicker1.Value.ToString("dd/MM/yy") + "', null)";

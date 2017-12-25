@@ -1,6 +1,6 @@
 ﻿namespace HomeFirtAidKit
 {
-    partial class EditCategoryForm
+    partial class EditSymptomForm
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(71, 42);
+            this.textBoxName.Location = new System.Drawing.Point(71, 40);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(48, 20);
@@ -56,22 +56,22 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(15, 45);
+            this.labelName.Location = new System.Drawing.Point(15, 43);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(52, 13);
+            this.labelName.Size = new System.Drawing.Size(53, 13);
             this.labelName.TabIndex = 3;
-            this.labelName.Text = "Category:";
+            this.labelName.Text = "Symptom:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(18, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(67, 21);
+            this.comboBox1.Size = new System.Drawing.Size(76, 21);
             this.comboBox1.TabIndex = 5;
             // 
-            // EditCategoryForm
+            // EditSymptomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,8 +81,8 @@
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.butApply);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "EditCategoryForm";
-            this.Text = "Edit Category";
+            this.Name = "EditSymptomForm";
+            this.Text = "Edit Symptom";
             this.ResumeLayout(false);
             this.PerformLayout();
 

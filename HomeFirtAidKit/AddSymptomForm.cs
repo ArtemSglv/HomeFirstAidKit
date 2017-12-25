@@ -21,7 +21,7 @@ namespace HomeFirtAidKit
         {
             int sym_id = int.Parse(ConnectionDB.Select("select max(ID_symptom) from symptom"));
             sym_id++;
-            string sql = "insert into disease values('" + sym_id + "','" + textBox1.Text + "')";
+            string sql = "insert into symptom values('" + sym_id + "','" + textBox1.Text + "')";
             ConnectionDB.Insert(sql);
             Close();
         }
